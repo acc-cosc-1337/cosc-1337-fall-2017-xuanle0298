@@ -21,8 +21,10 @@ int getRegularHours()
 
 int getOvertimeHours(int hours, int ST_HOURS)
 {
-
-   return hours - ST_HOURS;
+   if (hours < ST_HOURS)
+        return 0;
+   else
+        return hours - ST_HOURS;
 
 }
 
