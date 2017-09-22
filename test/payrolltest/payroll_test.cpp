@@ -2,7 +2,7 @@
 #include "Payroll.h"
 
 TEST(hours_returned, hours_larger_than_40){
-  EXPECTED_EQ(20, getOvertimeHours(60));
+  EXPECTED_EQ(10, getOvertimeHours(50));
 }
 
 TEST(overtime_pay_returned, overtime_hours){
