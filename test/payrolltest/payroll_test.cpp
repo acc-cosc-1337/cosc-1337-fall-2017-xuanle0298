@@ -5,7 +5,7 @@ TEST(hours_returned, hours_larger_than_40){
     EXPECT_EQ(10, getOvertimeHours(50, 40));
 }
 
-TEST(overtime_pay_returned, overtime_hours_and_overtimeRate){
-    EXPECT_EQ(300, getOvertimePay(10, 30));
+TEST(hours_returned, hours_smaller_than_40){
+    EXPECT_EQ(0, getOvertimeHours(30, 40));
 }
  
