@@ -6,6 +6,6 @@ TEST(hours_returned, hours_larger_than_40){
 }
 
 TEST(overtime_pay_returned, overtime_hours){
-    EXPECTED_EQ(300, getOvertimePay(10));
+    EXPECTED_EQ(300, getOvertimePay(10, OT_RATE));
 }
  
