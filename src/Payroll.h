@@ -1,19 +1,18 @@
 #ifndef _PAYROLL_H
 #define _PAYROLL_H
 
-int getRegularHours();
-int getOvertimeHours(int);
-float getRegularPay(double regHours, double regRate);
-float getOvertimePay(double otHours, double otRate);
-float getGrossPay(double regPay, double otPay);
-double getFIT(double fit, double grossPay);
-double getFICASSN(double ficassn, double grossPay);
-double getFICAMED(double ficamed, double grossPay);
-double getNetPay(double grossPay, double fit, double ficassn, double ficamed);
-double getSalary();
-double getFIT_S(double grossPayS, double FIT);
-double getFICASSN_S(double SS, double grossPayS);
-double getFICAMED_S(double med, double grossPayS);
-double getNetPay_S(double grossPayS, double fitTaxS, double ssnTaxS, double medTaxS);
+static int getRegularHours();
+static int getOvertimeHours(int Hours, int ST_HOURS);
+static double getRegularPay(int ST_HOURS, double stRate);
+static double getOvertimePay(int otOvertimeHrs, double OT_RATE);
+static double getGrossPay(double regPay, double otPay);
+static double getFIT(double FIT, double grossPay);
+static double getFICASSN(double SS, double grossPay);
+static double getFICAMED(double MED, double grossPay);
+static double getNetPay(double grossPay, double fitTax, double ssnTax, double medTax);
+static double getFIT_S(double grossPayS, double FIT);
+static double getFICASSN_S(double SS, double grossPayS);
+static double getFICAMED_S(double MED, double grossPayS);
+static double getNetPay_S(double grossPayS, double fitTaxS, double ssnTaxS, double medTaxS);
 
 #endif
