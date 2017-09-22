@@ -19,7 +19,7 @@ int getRegularHours()
 	return hours;
 }
 
-int getOvertimeHours(int Hours, int ST_HOURS)
+static int getOvertimeHours(int Hours, int ST_HOURS)
 {
 	if (Hours < ST_HOURS)
 		return 0;
