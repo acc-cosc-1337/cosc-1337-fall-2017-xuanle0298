@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "Payroll.h"
+#include "Payroll.cpp"
 #include <string>
 
 using namespace std;
