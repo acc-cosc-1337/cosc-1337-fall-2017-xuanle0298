@@ -14,3 +14,5 @@ TEST(regPay_returned, Hours_entered_larger_than_40){
     EXPECT_EQ(800, getRegularPay(50, 20.00));
 }
 
+TEST(regPay_returned, Hours_entered_smaller_than_40){
+    EXPECT_EQ(600, getRegularPay(30, 20.00));
