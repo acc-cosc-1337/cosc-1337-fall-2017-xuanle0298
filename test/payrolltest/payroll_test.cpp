@@ -10,3 +10,7 @@ TEST(hours_returned, hours_smaller_than_40){
     EXPECT_EQ(0, getOvertimeHours(30, 40));
 }
  
+TEST(regPay_returned, Hours_entered_larger_than_40){
+    EXPECT_EQ(800, getRegularPay(50, 20.00));
+}
+
