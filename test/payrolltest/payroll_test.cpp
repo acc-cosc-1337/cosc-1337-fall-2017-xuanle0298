@@ -26,11 +26,4 @@ TEST(FIT_tax_returned, FIT and_grossPay){
     EXPECT_EQ(300, getFIT(0.15, 2000));
 }
 
-TEST(FICASS_tax_returned, FICASS_and_grossPay){
-    EXPECT_EQ(64.48, getFICASSN(0.062, 1040));
-}
-
-TEST(FICASS_tax_returned, FICASS_and_grossPay){
-    EXPECT_EQ(124.00, getFICASSN(0.062, 2000));
-}
 
