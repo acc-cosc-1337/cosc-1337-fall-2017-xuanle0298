@@ -30,4 +30,6 @@ TEST(FICASS_tax_returned, FICASS_and_grossPay){
     EXPECT_EQ(64.48, getFICASSN(0.062, 1040));
 }
 
-
+TEST(FICASS_tax_returned, FICASS_and_grossPay_with_different_values){
+    EXPECT_EQ(124.00, getFICASSN(0.062, 2000));
+}
