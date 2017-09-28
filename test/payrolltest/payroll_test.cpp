@@ -22,7 +22,7 @@ TEST(FIT_tax_returned, FIT_and_grossPay){
     EXPECT_EQ(156, getFIT(0.15, 1040));
 }
 
-TEST(FIT_tax_returned, FIT_and_grossPay){
+TEST(FIT_tax_returned, FIT_and_grossPay_with_different_values){
     EXPECT_EQ(300, getFIT(0.15, 2000));
 }
 
