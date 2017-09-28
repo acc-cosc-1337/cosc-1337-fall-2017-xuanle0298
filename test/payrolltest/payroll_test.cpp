@@ -18,10 +18,3 @@ TEST(regPay_returned, Hours_entered_smaller_than_40){
     EXPECT_EQ(600, getRegularPay(30, 20.00));
 }
 
-TEST(FIT_tax_returned, FIT_and_grossPay){
-    EXPECT_EQ(156, getFIT(0.15, 1040));
-}
-
-TEST(FIT_tax_returned, FIT and_grossPay){
-	EXPECT_EQ(300, getFIT(0.15, 2000));
-}
